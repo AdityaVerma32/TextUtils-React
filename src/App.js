@@ -51,20 +51,20 @@ function App() {
 
   return (
     <>
-    <Navbar title="TextUtils" mode={mode} togglemode={togglemode} />
+      {/* <Navbar title="TextUtils" mode={mode} togglemode={togglemode} />
         <Alert alert={alert} />
-    <TextForm showAlert={showAlert} heading="Enter the text" mode={mode} />
-      {/* <Router>
+    <TextForm showAlert={showAlert} heading="Enter the text" mode={mode} /> */}
+      <Router>
         <Navbar title="TextUtils" mode={mode} togglemode={togglemode} />
         <Alert alert={alert} />
         <div className="contianer mx-5 my-3" >
 
           <Routes>
-            <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter the text" mode={mode} />}/>
-            <Route path="/about" element={   <About />}/>
+            <Route path="/" element={<TextForm showAlert={showAlert} heading="Try TextxUtils - Word Counter, Character Counter, Remove Extra Spcaes" mode={mode} />} />
+            <Route path="/about" element={<About mode={mode} />} />
           </Routes>
         </div>
-      </Router> */}
+      </Router>
 
     </>
   );
